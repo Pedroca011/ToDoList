@@ -28,6 +28,9 @@ function App() {
     setTasks(updatedTasks);
   };
 
+  const completedTasksCount = tasks.filter((task) => task.isCompleted).length;
+  const totalTasksCount = tasks.length;
+
   return (
     <>
       <NavBar />
@@ -37,7 +40,7 @@ function App() {
           placeholder="Adicione uma nova tarefa"
           value={newTask}
           onChange={(e) => setNewTask(e.target.value)}
-          className="bg-Gray500 text-Gray100 border-black border-2 rounded-lg py-4 pl-3 w-96 "
+          className="bg-Gray500 text-Gray100 border-black border-2 rounded-lg py-4 pl-3 w-96"
           required
         />
         <button
@@ -53,14 +56,14 @@ function App() {
           <div className="flex flex-row">
             <p className="text-Blue font-bold mx-1">Tarefas criadas</p>
             <div className="bg-Gray400 px-3 rounded-full">
-              <p className="text-white">{tasks.length}</p>
+              <p className="text-white">{totalTasksCount}</p>
             </div>
           </div>
           <div className="flex flex-row">
             <p className="text-Purple mx-1 font-bold">Concluídas</p>
             <div className="bg-Gray400 px-3 rounded-full">
               <p className="text-white">
-                {tasks.filter((task) => task.isCompleted).length} de {tasks.length}
+                {completedTasksCount} de {totalTasksCount}
               </p>
             </div>
           </div>
