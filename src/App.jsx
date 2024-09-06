@@ -1,6 +1,6 @@
 import NavBar from "./components/NavBar/NavBar";
 import { CgAdd } from "react-icons/cg";
-import ClipBoard from "./assets/ClipBoard.svg";
+import ClipBoard from "./assets/Clipboard.svg";
 import Task from "./components/Task/Task";
 import { useState } from "react";
 
