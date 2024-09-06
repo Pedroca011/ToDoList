@@ -40,7 +40,7 @@ function App() {
           placeholder="Adicione uma nova tarefa"
           value={newTask}
           onChange={(e) => setNewTask(e.target.value)}
-          className="bg-Gray500 text-Gray100 border-black border-2 rounded-lg py-4 pl-3 w-96"
+          className="bg-Gray500 text-Gray100 border-black border-2 rounded-lg py-4 pl-3 w-64 md:w-72 lg:w-96"
           required
         />
         <button
@@ -51,7 +51,7 @@ function App() {
           <CgAdd size={30} className="p-1" />
         </button>
       </form>
-      <div className="flex flex-col mx-96 my-16">
+      <div className="flex flex-col mx-2 my-16 md:mx-16 lg:mx-48 ">
         <div className="flex flex-row justify-between">
           <div className="flex flex-row">
             <p className="text-Blue font-bold mx-1">Tarefas criadas</p>
@@ -68,11 +68,11 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="text-Gray300 flex flex-col py-16 px-6 rounded-xl border-t-2 border-t-Gray400 mt-6">
+        <div className="text-Gray300 flex flex-col py-8 px-6 rounded-xl border-t-2 border-t-Gray400 mt-6">
           {tasks.length === 0 ? (
-            <div className="flex flex-col items-center py-16 px-6 mt-6">
+            <div className="flex flex-col items-center py-4 px-6 mt-6">
               <img src={ClipBoard} alt="ClipBoard" draggable="false" />
-              <p className="mt-6">
+              <p className="mt-6 text-sm md:text-xl">
                 <strong>Você ainda não tem tarefas cadastradas</strong>
                 <br />
                 Crie tarefas e organize seus itens a fazer
