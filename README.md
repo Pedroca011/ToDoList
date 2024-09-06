@@ -1,8 +1,8 @@
-# React + Vite
+# To do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To do List é uma aplicação simples e eficiente para gerenciamento de tarefas. Com ela, o usuário pode criar uma lista de anotações, marcar tarefas como concluídas e excluí-las conforme necessário. Ideal para organizar o dia a dia e manter o foco nas atividades pendentes.
 
-Currently, two official plugins are available:
+## Tecnológias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Utilizado para a construção da interface dinâmica da aplicação. O hook `useState` foi usado para gerenciar o estado das tarefas, permitindo a adição, marcação como concluída e exclusão das anotações.
+- **Tailwind CSS**: Utilizado para estilizar a aplicação de forma prática e eficiente, proporcionando uma interface moderna e responsiva.
